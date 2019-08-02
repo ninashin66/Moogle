@@ -2,7 +2,7 @@ body {
    background-color: black
 }
 .title {
-    font-size: 100px;
+    font-size: 150px;
     /* animation: mymove 5s;
     animation-timing-function: ease;
      */
@@ -20,7 +20,14 @@ font-size: larger;
 }
 
 
-
+#home {
+    background-color: transparent;
+    border: none;
+    animation-name: example2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 
 
@@ -28,13 +35,13 @@ font-size: larger;
     text-align: center;
     font-family: 'Bungee Hairline', cursive;
     color: lightskyblue;
-    background-image: url(../images/beats.jpg);
+    background-image: url(../images/230613.jpg);
    
     background-size: contain;
 
 
     animation-name: example2;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
    
@@ -43,8 +50,9 @@ font-size: larger;
 }
 
 @keyframes example2 {
-    from {color: lightskyblue;}
+    from {color: greenyellow;}
     to {color: white;}
+    
 }
 
 
@@ -66,7 +74,7 @@ h3 {
     clear: both;
     position: absolute; 
     right: 267px;
-    top: 382px;
+    top: 440px;
     height: 43px;
     background-color: black;
     color: white;
@@ -88,8 +96,8 @@ h3 {
 }
 
 .genre-btn {
-    background-color: lightskyblue;
-    color: black;
+    background-color: blue;
+    color: white;
     border-radius: 50%;
     padding: 20px;
     height: 80px;
@@ -97,8 +105,16 @@ h3 {
     text-align: center;
     font-size: smaller;
     font-weight: bold;
+    opacity: .6;
     
 
+}
+
+.content {
+    border: white 2px solid;
+    height: auto;
+    width: auto;
+    margin: 30px;
 }
 
 
