@@ -20,6 +20,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets 8.22.28 PM/css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets 8.22.28 PM/javascript/app.js"></script>
   </head>
   <body>
     <header>
@@ -32,9 +38,10 @@
     </header>
     <br />
     <div class="searchDiv">
-      <div class="input-group input-group-lg search-bar">
+      <div class="input-group input-group-lg search-bar" id="arist">
         <div class="input-group-prepend"></div>
         <input
+          id="artist"
           type="text"
           class="form-control"
           aria-label="Sizing example input"
@@ -42,11 +49,13 @@
           placeholder="Type your favorite Artist/Band here..."
         />
       </div>
-      <button type="button" class="btn btn-dark search-btn">Search</button>
+      <button type="button" class="btn btn-dark search-btn" id="search-btn">
+        Search
+      </button>
     </div>
-    
-   <h3>Or click a genre</h3>
-   <br>
+
+    <h3>Or click a genre</h3>
+    <br />
     <div class="genres">
       <button class="genre-btn">Hip-Hop</button>
       <button class="genre-btn">Rock</button>
@@ -54,20 +63,17 @@
       <button class="genre-btn">Pop</button>
       <button class="genre-btn">EDM</button>
       <button class="genre-btn">Indie</button>
-      <br>
+      <br />
       <button class="genre-btn">Classical</button>
       <button class="genre-btn">Blue Grass</button>
       <button class="genre-btn">Jazz</button>
       <button class="genre-btn">Heavy metal</button>
       <button class="genre-btn">Folk</button>
       <button class="genre-btn">Reggae</button>
-      
-      
     </div>
 
-    <br>
-    <br>
-    
+    <br />
+    <br />
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
