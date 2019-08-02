@@ -1,14 +1,12 @@
 body {
-   background-color: black
+  background-color: black;
 }
 .title {
-    font-size: 100px;
-    /* animation: mymove 5s;
+  font-size: 100px;
+  /* animation: mymove 5s;
     animation-timing-function: ease;
      */
 }
-
-
 
 /* @keyframes mymove {
     from {left: 0px;}
@@ -16,89 +14,69 @@ body {
   } */
 
 p {
-font-size: larger;
+  font-size: larger;
 }
 
-
-
-
-
-
 .jumbotron {
-    text-align: center;
-    font-family: 'Bungee Hairline', cursive;
-    color: lightskyblue;
-    background-image: url(../images/beats.jpg);
-   
-    background-size: contain;
+  text-align: center;
+  font-family: "Bungee Hairline", cursive;
+  color: lightskyblue;
+  background-image: url(../images/beats.jpg);
 
+  background-size: contain;
 
-    animation-name: example2;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-   
-    
-    
+  animation-name: example2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes example2 {
-    from {color: lightskyblue;}
-    to {color: white;}
+  from {
+    color: lightskyblue;
+  }
+  to {
+    color: white;
+  }
 }
 
-
-
-
 .search-bar {
-    left: 23%;
-    width: 50%;
-    float: left;
-    
-    
+  left: 23%;
+  width: 50%;
+  float: left;
 }
 
 h3 {
-    text-align: center;
-    color: lightgray;
+  text-align: center;
+  color: lightgray;
 }
 .search-btn {
-    clear: both;
-    position: absolute; 
-    right: 267px;
-    top: 382px;
-    height: 43px;
-    background-color: black;
-    color: white;
-    border: black 1px solid;
-    
-
+  clear: both;
+  position: absolute;
+  right: 267px;
+  top: 382px;
+  height: 43px;
+  background-color: black;
+  color: white;
+  border: black 1px solid;
 }
 
 .searchDiv {
-    
-    height: 100px;
-    
-
+  height: 100px;
 }
 
 .genres {
-    text-align: center;
-    
+  text-align: center;
 }
 
 .genre-btn {
-    background-color: lightskyblue;
-    color: black;
-    border-radius: 50%;
-    padding: 20px;
-    height: 80px;
-    width: 90px;
-    text-align: center;
-    font-size: smaller;
-    font-weight: bold;
-    
-
+  background-color: lightskyblue;
+  color: black;
+  border-radius: 50%;
+  padding: 20px;
+  height: 80px;
+  width: 90px;
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
 }
-
-
