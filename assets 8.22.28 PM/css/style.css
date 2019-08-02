@@ -1,120 +1,98 @@
 body {
-   background-color: black
+  background-color: black;
 }
 .title {
-    font-size: 150px;
-    /* animation: mymove 5s;
-    animation-timing-function: ease;
-     */
+  font-size: 150px;
+  /* animation: mymove 5s;
+   animation-timing-function: ease;
+    */
 }
-
-
 
 /* @keyframes mymove {
-    from {left: 0px;}
-    to {left: 300px;}
-  } */
+   from {left: 0px;}
+   to {left: 300px;}
+ } */
 
 p {
-font-size: larger;
+  font-size: larger;
 }
-
 
 #home {
-    background-color: transparent;
-    border: none;
-    animation-name: example2;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  background-color: transparent;
+  border: none;
+  animation-name: example2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-
-
 .jumbotron {
-    text-align: center;
-    font-family: 'Bungee Hairline', cursive;
-    color: lightskyblue;
-    background-image: url(../images/230613.jpg);
-   
-    background-size: contain;
+  text-align: center;
+  font-family: "Bungee Hairline", cursive;
+  color: lightskyblue;
+  background-image: url(../images/230613.jpg);
 
+  background-size: contain;
 
-    animation-name: example2;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-   
-    
-    
+  animation-name: example2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes example2 {
-    from {color: greenyellow;}
-    to {color: white;}
-    
+  from {
+    color: greenyellow;
+  }
+  to {
+    color: white;
+  }
 }
 
-
-
-
 .search-bar {
-    left: 23%;
-    width: 50%;
-    float: left;
-    
-    
+  left: 23%;
+  width: 50%;
+  float: left;
 }
 
 h3 {
-    text-align: center;
-    color: lightgray;
+  text-align: center;
+  color: lightgray;
 }
 .search-btn {
-    clear: both;
-    position: absolute; 
-    right: 267px;
-    top: 440px;
-    height: 43px;
-    background-color: black;
-    color: white;
-    border: black 1px solid;
-    
-
+  clear: both;
+  position: relative;
+  left: 25%;
+  height: 43px;
+  background-color: black;
+  color: white;
+  border: black 1px solid;
 }
 
 .searchDiv {
-    
-    height: 100px;
-    
-
+  height: 100px;
 }
 
 .genres {
-    text-align: center;
-    
+  text-align: center;
 }
 
 .genre-btn {
-    background-color: blue;
-    color: white;
-    border-radius: 50%;
-    padding: 20px;
-    height: 80px;
-    width: 90px;
-    text-align: center;
-    font-size: smaller;
-    font-weight: bold;
-    opacity: .6;
-    
-
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  padding: 20px;
+  height: 80px;
+  width: 90px;
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
+  opacity: 0.6;
 }
 
 .content {
-    border: white 2px solid;
-    height: auto;
-    width: auto;
-    margin: 30px;
+  border: white 2px solid;
+  height: auto;
+  width: auto;
+  margin: 30px;
 }
-
-

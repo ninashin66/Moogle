@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
  var artist="cure"  
  var queryURL ="https://rest.bandsintown.com/artists/"+artist+"?app_id="+apiKey;
