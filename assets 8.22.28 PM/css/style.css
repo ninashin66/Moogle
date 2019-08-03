@@ -105,6 +105,7 @@ h3 {
     height: auto;
     width: auto;
     margin: 30px;
+    color: white;
 }
 
 
@@ -115,22 +116,24 @@ h3 {
    font-family: "Bungee Hairline", cursive;
   
  }
-
- .artist-fb {
-  
-  color: white;
-  font-size: large;
- background-color: blue;
- 
- 
-}
-
-.band-image {
+ .band-image {
   
   height: 400px;
   width: 400px;
   /* border: white 2px solid; */
   margin: 30px;
 }
+
+ .artist-fb {
+  
+  color: white;
+  font-size: large;
+ background-color: blue;
+ position: static;
+ 
+ 
+}
+
+
 
 

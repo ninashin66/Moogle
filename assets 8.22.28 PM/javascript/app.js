@@ -20,15 +20,19 @@ $(document).ready(function() {
       var artistName = $("<h2>").text(responseData.name);
       artistName.addClass("artistName");
       var artistFacebook = $("<a>").attr("href", responseData.facebook_page_url).text("Facebook");
+      artistFacebook.addClass("artist-fb");
+      var upcomingEvents = $("<h2>").text(responseData.upcoming_event_count + " upcoming events");
+      var goToArtist = $("<a>").attr("href", responseData.url).text("See Tour Dates");
       // var fbIcon = $("<i>").attr("href", "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
       // fbIcon.addClass("fab fa-facebook");
-      artistFacebook.addClass("artist-fb");
-      $(".content").append(artistName, artistImage, artistFacebook);
+      
+      $(".content").append(artistName, artistImage, artistFacebook, upcomingEvents, goToArtist);
     });
   }
 
   $("#search").on("click", function(event) {
     event.preventDefault();
+    $(".content").empty();
 
     var artist = $("#artist").val();
     console.log(artist);
