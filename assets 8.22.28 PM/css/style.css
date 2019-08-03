@@ -34,19 +34,22 @@ p {
 
   background-size: contain;
 
-  animation-name: example2;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+    
+    
 }
 
 @keyframes example2 {
-  from {
-    color: black;
-  }
-  to {
-    color: white;
-  }
+    from {color: black;}
+    to {color: white;}
+    
+
+
 }
 
 #small-head {
@@ -125,8 +128,10 @@ p {
 }
 
 .content {
-  border: white 2px solid;
-  height: 800px;
-  width: auto;
-  margin: 30px;
+
+    border: white 2px solid;
+    height: 800px;
+    width: auto;
+    margin: 30px;
+
 }
