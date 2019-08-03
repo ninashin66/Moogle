@@ -34,19 +34,21 @@ p {
 
   background-size: contain;
 
-  animation-name: example2;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+    
+    
 }
 
 @keyframes example2 {
-  from {
-    color: greenyellow;
-  }
-  to {
-    color: white;
-  }
+    from {color: black;}
+    to {color: white;}
+    
+
 }
 
 .search-bar {
@@ -91,8 +93,10 @@ h3 {
 }
 
 .content {
-  border: white 2px solid;
-  height: auto;
-  width: auto;
-  margin: 30px;
+
+    border: white 2px solid;
+    height: 800px;
+    width: auto;
+    margin: 30px;
+
 }
