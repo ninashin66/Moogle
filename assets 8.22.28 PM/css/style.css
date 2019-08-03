@@ -144,20 +144,12 @@ p {
 }
 
 .content {
-<<<<<<< HEAD
-    /* border: white 2px solid; */
-    height: auto;
-    width: auto;
-    margin: 30px;
-    color: white;
-=======
 
     border: white 2px solid;
     height: 800px;
     width: auto;
     margin: 30px;
 
->>>>>>> fd0e2aac3acb819e230b4468385c1b1b552d48e4
 }
 
 
