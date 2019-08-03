@@ -20,11 +20,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets 8.22.28 PM/css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets 8.22.28 PM/javascript/app.js"></script>
   </head>
   <body>
     <header>
       <div class="jumbotron">
-       
         <h1 class="title"><strong>MOOGLE</strong></h1>
 
         <br />
@@ -33,9 +38,10 @@
     </header>
     <br />
     <div class="searchDiv">
-      <div class="input-group input-group-lg search-bar">
+      <div class="input-group input-group-lg search-bar" id="arist">
         <div class="input-group-prepend"></div>
         <input
+          id="artist"
           type="text"
           class="form-control"
           aria-label="Sizing example input"
@@ -44,12 +50,12 @@
         />
       </div>
       <a href="band.html">
-      <button  type="submit" class="btn btn-dark search-btn">Search</button>
-    </a>
+        <button type="submit" class="btn btn-dark search-btn">Search</button>
+      </a>
     </div>
-    
-   <h3>Or click a genre</h3>
-   <br>
+
+    <h3>Or click a genre</h3>
+    <br />
     <div class="genres">
       <a href="genre.html"><button class="genre-btn">Hip-Hop</button></a>
       <a href="genre.html"><button class="genre-btn">Rock</button></a>
@@ -57,31 +63,24 @@
       <a href="genre.html"><button class="genre-btn">Pop</button></a>
       <a href="genre.html"><button class="genre-btn">EDM</button></a>
       <a href="genre.html"><button class="genre-btn">Indie</button></a>
-      <br>
+      <br />
       <a href="genre.html"><button class="genre-btn">Classical</button></a>
       <a href="genre.html"><button class="genre-btn">Blue Grass</button></a>
       <a href="genre.html"><button class="genre-btn">Jazz</button></a>
       <a href="genre.html"><button class="genre-btn">Heavy metal</button></a>
       <a href="genre.html"><button class="genre-btn">Folk</button></a>
       <a href="genre.html"><button class="genre-btn">Reggae</button></a>
-
-      
-      
-    
-
     </div>
 
-    <br>
-    <br>
-    
+    <br />
+    <br />
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -92,5 +91,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="apiKey.js"></script>
+    <script src="assets 8.22.28 PM/javascript/app.js"></script>
   </body>
 </html>
