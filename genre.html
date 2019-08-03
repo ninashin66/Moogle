@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Moogle</title>
+    <title>Genre</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link
       href="https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap"
       rel="stylesheet"
@@ -21,61 +20,37 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets 8.22.28 PM/css/style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="assets 8.22.28 PM/javascript/app.js"></script> -->
   </head>
   <body>
-    <header>
-      <div class="jumbotron">
-        <h1 class="title"><strong>MOOGLE</strong></h1>
+    <header id='small-head'>
+      
+        <a id="home" href="index 8.22.28 PM.html"><h1><strong>MOOGLE</strong></h1></a>
 
-        <br />
-        <p>Your online music directory</p>
-      </div>
+        <p  id="subtitle">Your online music directory</p>
     </header>
-    <br />
-    <div class="searchDiv">
-      <div class="input-group input-group-lg search-bar" id="arist">
-        <div class="input-group-prepend"></div>
-        <input
-          id="artist"
-          type="text"
-          class="form-control"
-          aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-lg"
-          placeholder="Type your favorite Artist/Band here..."
-        />
-      </div>
-      <a href="band.html">
-        <button type="submit" class="btn btn-dark search-btn" id="search">Search</button>
+ 
+    <div class="search-Div-Small">
+        <div class="input-group input-group-sm search-bar-small">
+            <div class="input-group-prepend"></div>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-lg"
+              
+            />
+          </div>
+          <a href="band.html">
+        <button type="submit" class="btn btn-dark search-btn-small">Search</button>
       </a>
     </div>
 
-    <div class="genres">
-<<<<<<< HEAD
-      <button class="genre-btn">Hip-Hop</button>
-      <button class="genre-btn">Rock</button>
-      <button class="genre-btn">Country</button>
-      <button class="genre-btn">Pop</button>
-      <button input="Electro" class="genre-btn">EDM</button>
-      <button class="genre-btn">Indie</button>
-      <br />
-      <button class="genre-btn">Classical</button>
-      <button class="genre-btn">Blue Grass</button>
-      <button class="genre-btn">Jazz</button>
-      <button class="genre-btn">Heavy metal</button>
-      <button class="genre-btn">Folk</button>
-      <button class="genre-btn">Reggae</button>
-=======
-      <div id="buttons-1">
+   <div class="genres">
+      
         <a href="genre.html"
           ><button
             type="button"
-            class="btn btn-outline-primary waves-effect btn-genre"
+            class="btn btn-outline-primary waves-effect btn-genre-small"
           >
             Hip-Hop
           </button></a
@@ -83,7 +58,7 @@
         <a href="genre.html"
           ><button
             type="button"
-            class="btn btn-outline-light waves-effect btn-genre"
+            class="btn btn-outline-light waves-effect btn-genre-small"
           >
             Rock
           </button></a
@@ -91,7 +66,7 @@
         <a href="genre.html"
           ><button
             type="button"
-            class="btn btn-outline-secondary waves-effect btn-genre"
+            class="btn btn-outline-secondary waves-effect btn-genre-small"
           >
             Country
           </button></a
@@ -99,7 +74,7 @@
         <a href="genre.html"
           ><button
             type="button"
-            class="btn btn-outline-success waves-effect btn-genre"
+            class="btn btn-outline-success waves-effect btn-genre-small"
           >
             Pop
           </button></a
@@ -107,7 +82,7 @@
         <a href="genre.html"
           ><button
             type="button"
-            class="btn btn-outline-info waves-effect btn-genre"
+            class="btn btn-outline-info waves-effect btn-genre-small"
           >
             EDM
           </button></a
@@ -115,17 +90,17 @@
         <a href="genre.html"
           ><button
             type="button"
-            class="btn btn-outline-warning waves-effect btn-genre"
+            class="btn btn-outline-warning waves-effect btn-genre-small"
           >
             Indie
           </button></a
         >
-      </div>
-      <div id="buttons-2">
+      
+    
         <a href="genre.html"
           ><button
             type="button"
-            class="btn btn-outline-primary waves-effect btn-genre"
+            class="btn btn-outline-primary waves-effect btn-genre-small"
           >
             Classical
           </button></a
@@ -133,7 +108,7 @@
         <a href="genre.html"
           ><button
             type="button"
-            class="btn btn-outline-light waves-effect btn-genre"
+            class="btn btn-outline-light waves-effect btn-genre-small"
           >
             Blue Grass
           </button></a
@@ -141,7 +116,7 @@
         <a href="genre.html"
           ><button
             type="button"
-            class="btn btn-outline-secondary waves-effect btn-genre"
+            class="btn btn-outline-secondary waves-effect btn-genre-small"
           >
             Jazz
           </button></a
@@ -149,7 +124,7 @@
         <a href="genre.html"
           ><button
             type="button"
-            class="btn btn-outline-success waves-effect btn-genre"
+            class="btn btn-outline-success waves-effect btn-genre-small"
           >
             Heavy metal
           </button></a
@@ -157,7 +132,7 @@
         <a href="genre.html"
           ><button
             type="button"
-            class="btn btn-outline-info waves-effect btn-genre"
+            class="btn btn-outline-info waves-effect btn-genre-small"
           >
             Folk
           </button></a
@@ -165,32 +140,31 @@
         <a href="genre.html"
           ><button
             type="button"
-            class="btn btn-outline-warning waves-effect btn-genre"
+            class="btn btn-outline-warning waves-effect btn-genre-small"
           >
             Reggae
           </button></a
         >
-      </div>
->>>>>>> fd0e2aac3acb819e230b4468385c1b1b552d48e4
+
     </div>
+    <br>
+    <br>
 
-    <br />
-    <br />
+  </div>
 
-    <div class="content">
-     
+ 
 
+    <br>
+    <br>
     
-
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -201,8 +175,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
-    <script src="apiKey.js"></script>
-    <script src="assets 8.22.28 PM/javascript/app.js"></script>
+    <script src="moogle.js"></script>
   </body>
 </html>
