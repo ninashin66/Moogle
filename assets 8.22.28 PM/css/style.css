@@ -41,7 +41,7 @@ font-size: larger;
 
 
     animation-name: example2;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
    
@@ -50,7 +50,7 @@ font-size: larger;
 }
 
 @keyframes example2 {
-    from {color: greenyellow;}
+    from {color: black;}
     to {color: white;}
     
 }
@@ -112,7 +112,7 @@ h3 {
 
 .content {
     border: white 2px solid;
-    height: auto;
+    height: 800px;
     width: auto;
     margin: 30px;
 }
