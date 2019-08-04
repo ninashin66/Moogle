@@ -34,7 +34,10 @@ p {
 
   background-size: contain;
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> fd0e2aac3acb819e230b4468385c1b1b552d48e4
     animation-name: example2;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -48,6 +51,18 @@ p {
     from {color: black;}
     to {color: white;}
     
+<<<<<<< HEAD
+  
+}
+
+@keyframes example2 {
+  from {
+    color: greenyellow;
+  }
+  to {
+    color: white;
+  }
+=======
 
 
 }
@@ -68,6 +83,7 @@ p {
 
 #subtitle {
   font-size: 12px;
+>>>>>>> fd0e2aac3acb819e230b4468385c1b1b552d48e4
 }
 
 .search-bar {
@@ -135,3 +151,33 @@ p {
     margin: 30px;
 
 }
+
+
+.artistName {
+  margin: 20px;
+   color: white;
+   font-size: 100px;
+   font-family: "Bungee Hairline", cursive;
+  
+ }
+ .band-image {
+  
+  height: 400px;
+  width: 400px;
+  /* border: white 2px solid; */
+  margin: 30px;
+}
+
+ .artist-fb {
+  
+  color: white;
+  font-size: large;
+ background-color: blue;
+ position: static;
+ 
+ 
+}
+
+
+
+
