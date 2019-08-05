@@ -34,7 +34,10 @@ p {
 
   background-size: contain;
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> fd0e2aac3acb819e230b4468385c1b1b552d48e4
     animation-name: example2;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -48,48 +51,96 @@ p {
     from {color: black;}
     to {color: white;}
     
+<<<<<<< HEAD
+  
+}
 
+@keyframes example2 {
+  from {
+    color: greenyellow;
+  }
+  to {
+    color: white;
+  }
+=======
+
+
+}
+
+#small-head {
+  text-align: center;
+  height: 20%;
+  font-family: "Bungee Hairline", cursive;
+  color: lightskyblue;
+  background-image: url(../images/230613.jpg);
+  background-size: contain;
+
+  animation-name: example2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#subtitle {
+  font-size: 12px;
+>>>>>>> fd0e2aac3acb819e230b4468385c1b1b552d48e4
 }
 
 .search-bar {
-  left: 23%;
-  width: 50%;
+  left: 30%;
+  width: 40%;
   float: left;
 }
 
-h3 {
-  text-align: center;
-  color: lightgray;
+.search-bar-small {
+  width: 20%;
+  left: 40%;
 }
+
 .search-btn {
   clear: both;
   position: relative;
-  left: 25%;
+  left: 30%;
+  margin-left: 1%;
   height: 43px;
   background-color: black;
   color: white;
   border: black 1px solid;
 }
 
+.search-btn-small {
+  clear: both;
+  position: relative;
+  left: 60%;
+  bottom: 30px;
+  margin-left: 1px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: black 1px solid;
+  font-size: 12px;
+}
+
 .searchDiv {
   height: 100px;
+}
+
+.search-Div-Small {
+  height: 35px;
+  margin-bottom: 5px;
 }
 
 .genres {
   text-align: center;
 }
 
-.genre-btn {
-  background-color: blue;
-  color: white;
-  border-radius: 50%;
-  padding: 20px;
-  height: 80px;
-  width: 90px;
-  text-align: center;
-  font-size: smaller;
-  font-weight: bold;
-  opacity: 0.6;
+.btn-genre {
+  margin: 5px;
+}
+
+.btn-genre-small {
+  margin: 5px;
+  font-size: 8px;
 }
 
 .content {
@@ -100,3 +151,33 @@ h3 {
     margin: 30px;
 
 }
+
+
+.artistName {
+  margin: 20px;
+   color: white;
+   font-size: 100px;
+   font-family: "Bungee Hairline", cursive;
+  
+ }
+ .band-image {
+  
+  height: 400px;
+  width: 400px;
+  /* border: white 2px solid; */
+  margin: 30px;
+}
+
+ .artist-fb {
+  
+  color: white;
+  font-size: large;
+ background-color: blue;
+ position: static;
+ 
+ 
+}
+
+
+
+
