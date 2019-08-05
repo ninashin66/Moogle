@@ -45,7 +45,7 @@ $(document).ready(function() {
 
 
 
-  $(".search-btn").on("click", function(event) {
+  $(".search-btn-small").on("click", function(event) {
     event.preventDefault();
     //console.log('clicked')
     var userInput = $(".main-search").val();
@@ -66,12 +66,25 @@ function results(name = "", tracklist = []) {
     
     for(var i=0; i < tracklist.length;i++) {
         var tracklistTitle = $("<p>").html(tracklist[i].title);
-        var tracklistPreview = $("<p>").html(tracklist[i].preview);
+        // var tracklistPreview = $("<a>").html(tracklist[i].preview);
+        // var tracklistPreview = $("<audio>").attr("controls");
+        // var tracklistSource = $("<source>").attr("src", tracklist[i].preview).attr("type", "audio/ogg");
+        // tracklistPreview.append(tracklistSource);
+        // console.log('source',tracklistSource);
+        //audio tag dosen't work in jquery so vanilla audio script 
+        var sound = document.createElement('audio');
+        sound.id = "audio-player";
+        sound.controls = "controls";
+        sound.src =  tracklist[i].preview;
+        sound.type = "audio/mpeg";
 
-        tracklistContainer.append(tracklistTitle).append(tracklistPreview);
+        tracklistContainer.append(tracklistTitle).append(sound);
+        // document.getElementById('results').appendChild(sound);
+
+        
     }
     
 
     resultsContainer.append(name).append(tracklistContainer);
-    $("#results").append(resultsContainer);
+    $("#results").html(resultsContainer);
   }
