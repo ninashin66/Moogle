@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   function getTourDateInfo(searchTerm) {
     // var artist = "";
-    
+
     var queryURL =
       "https://rest.bandsintown.com/artists/" +
       searchTerm +
@@ -19,14 +19,26 @@ $(document).ready(function() {
       artistImage.addClass("band-image");
       var artistName = $("<h2>").text(responseData.name);
       artistName.addClass("artistName");
-      var artistFacebook = $("<a>").attr("href", responseData.facebook_page_url).text("Facebook");
+      var artistFacebook = $("<a>")
+        .attr("href", responseData.facebook_page_url)
+        .text("Facebook");
       artistFacebook.addClass("artist-fb");
-      var upcomingEvents = $("<h2>").text(responseData.upcoming_event_count + " upcoming events");
-      var goToArtist = $("<a>").attr("href", responseData.url).text("See Tour Dates");
+      var upcomingEvents = $("<h2>").text(
+        responseData.upcoming_event_count + " upcoming events"
+      );
+      var goToArtist = $("<a>")
+        .attr("href", responseData.url)
+        .text("See Tour Dates");
       // var fbIcon = $("<i>").attr("href", "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
       // fbIcon.addClass("fab fa-facebook");
-      
-      $(".content").append(artistName, artistImage, artistFacebook, upcomingEvents, goToArtist);
+
+      $(".content").append(
+        artistName,
+        artistImage,
+        artistFacebook,
+        upcomingEvents,
+        goToArtist
+      );
     });
   }
 
