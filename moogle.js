@@ -45,12 +45,14 @@ $(document).ready(function() {
 
 
 
-  $(".search-btn-small").on("click", function(event) {
+  $("#search").on("click", function(event) {
     event.preventDefault();
+    $("#results").empty();
     //console.log('clicked')
-    var userInput = $(".main-search").val();
+    var userInput = $("#artist").val();
     console.log(userInput);
     getArtist(userInput);
+    $("#results").show();
   });
 
  
@@ -58,6 +60,7 @@ $(document).ready(function() {
 
 function results(name = "", tracklist = []) {
     var resultsContainer = $("<div>");
+    
     var name = $("<p>").text(name);
 
     // var tracklistStringrify = JSON.stringify(tracklist,null, 2);
