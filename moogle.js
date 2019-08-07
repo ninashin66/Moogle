@@ -50,12 +50,20 @@ $(document).ready(function() {
     getArtist(userInput);
     $("#results").show();
   });
+
+  $("#artist").on("click", function() {
+    console.log("clicked");
+    $(".content").empty();
+    $("#results").empty();
+    tracklist = [];
+    $(".content").hide();
+  });
 });
 
 function results(name = "", tracklist = []) {
   var resultsContainer = $("<div>");
 
-  var name = $("<p>").text(name);
+  var name = $("<p class='tracks'>").text(name);
 
   // var tracklistStringrify = JSON.stringify(tracklist,null, 2);
   //  var tracklist = $("<p>").text(tracklistStringrify);
