@@ -34,10 +34,7 @@ p {
 
   background-size: contain;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> fd0e2aac3acb819e230b4468385c1b1b552d48e4
     animation-name: example2;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -51,7 +48,6 @@ p {
     from {color: black;}
     to {color: white;}
     
-<<<<<<< HEAD
   
 }
 
@@ -62,7 +58,6 @@ p {
   to {
     color: white;
   }
-=======
 
 
 }
@@ -83,7 +78,6 @@ p {
 
 #subtitle {
   font-size: 12px;
->>>>>>> fd0e2aac3acb819e230b4468385c1b1b552d48e4
 }
 
 .search-bar {
@@ -145,7 +139,7 @@ p {
 
 .content {
 
-    border: white 2px solid;
+    
     height: 800px;
     width: auto;
     margin: 30px;
@@ -171,13 +165,32 @@ p {
  .artist-fb {
   
   color: white;
-  font-size: large;
+  font-size: 100px;
+  
  background-color: blue;
  position: static;
  
  
 }
 
+.fb-icon {
+  width: 24px !important;
+    height: 24px !important;
+}
 
+.upcomingEvents {
+  border: white 2px solid;
+  padding: 20px;
+  color: white;
+  margin: 20px;
+  text-align: center;
+}
+
+.seeTour {
+  font-size: 75px;
+  text-align: center;
+  position: absolute;
+right: 32%;
+}
 
 
