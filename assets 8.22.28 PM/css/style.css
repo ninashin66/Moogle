@@ -163,22 +163,29 @@ header {
 }
 
 .artist-fb {
-  position: relative;
-  color: black;
-  left: 20%;
-  font-size: 300%;
+  color: white;
+  font-size: 100px;
+
+  background-color: blue;
+  position: static;
 }
 
-.tour {
-  position: relative;
-  bottom: 500px;
-  left: 50%;
-  color: black;
-  font-size: 300%;
+.fb-icon {
+  width: 24px !important;
+  height: 24px !important;
 }
 
-.events {
-  position: relative;
-  left: 10%;
-  color: black;
+.upcomingEvents {
+  border: white 2px solid;
+  padding: 20px;
+  color: white;
+  margin: 20px;
+  text-align: center;
+}
+
+.seeTour {
+  font-size: 75px;
+  text-align: center;
+  position: absolute;
+  right: 32%;
 }
