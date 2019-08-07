@@ -35,6 +35,8 @@ $(document).ready(function() {
     });
   }
 
+
+
   $("#search").on("click", function(event) {
     event.preventDefault();
     $(".content").empty();
@@ -47,4 +49,11 @@ $(document).ready(function() {
 
     $(".content").show();
   });
+
+  // $("#artist").on("click", function(event) {
+    
+  //   // $(".container").empty();
+  //   // $("#results").empty();
+  // $("#artist").val(" ");
+  // });
 });

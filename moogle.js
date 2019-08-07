@@ -47,14 +47,16 @@ $(document).ready(function() {
 
   $("#search").on("click", function(event) {
     event.preventDefault();
-    $("#results").empty();
+    
     //console.log('clicked')
     var userInput = $("#artist").val();
     console.log(userInput);
     getArtist(userInput);
     $("#results").show();
+
   });
 
+  //event listener to clear input and display
  
 });
 
