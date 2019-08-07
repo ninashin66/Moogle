@@ -8,6 +8,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <script src="https://kit.fontawesome.com/bc477a9f9b.js"></script>
+
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -15,6 +17,7 @@
       href="https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap"
       rel="stylesheet"
     />
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -28,20 +31,25 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Oswald&display=swap"
+      rel="stylesheet"
+    />
     <!-- <script src="assets 8.22.28 PM/javascript/app.js"></script> -->
   </head>
   <body>
     <header>
-      <div class="jumbotron">
-        <h1 class="title"><strong>MOOGLE</strong></h1>
+      <!-- <div class="jumbotron"> -->
+      <a id="home" href="index 8.22.28 PM.html"
+        ><h1 id="head"><strong>MOOGLE</strong></h1></a
+      >
 
-        <br />
-        <p>Your online music directory</p>
-      </div>
+      <p>Your online music directory</p>
+      <!-- </div> -->
     </header>
-    <br />
+
     <div class="searchDiv">
-      <div class="input-group input-group-lg search-bar" id="arist">
+      <div class="input-group input-group-lg search-bar" id="search-bar">
         <div class="input-group-prepend"></div>
         <input
           id="artist"
@@ -52,14 +60,14 @@
           placeholder="Type your favorite Artist/Band here..."
         />
       </div>
-      <a href="band.html">
-        <button type="submit" class="btn btn-dark search-btn" id="search">
-          Search
-        </button>
-      </a>
+      <!-- <a href="band.html"> -->
+      <button type="submit" class="btn btn-dark search-btn" id="search">
+        Search
+      </button>
+      <!-- </a> -->
     </div>
 
-    <div class="genres">
+    <!-- <div class="genres">
       <div id="buttons-1">
         <a href="genre.html"
           ><button
@@ -160,12 +168,13 @@
           </button></a
         >
       </div>
+    </div> -->
+
+    <div class="content">
+      <div id="artist-info"></div>
+      <div id="links"></div>
+      <div id="results"></div>
     </div>
-
-    <br />
-    <br />
-
-    <div class="content"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -186,5 +195,7 @@
     ></script>
 
     <script src="apiKey.js"></script>
+    <script src="assets 8.22.28 PM/javascript/app.js"></script>
+    <script src="moogle.js"></script>
   </body>
 </html>

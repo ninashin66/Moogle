@@ -1,8 +1,9 @@
 body {
+  font-family: "Bungee Hairline", cursive;
   background-color: black;
 }
 .title {
-  font-size: 150px;
+  font-size: 200px;
   /* animation: mymove 5s;
    animation-timing-function: ease;
     */
@@ -26,7 +27,10 @@ p {
   animation-direction: alternate;
 }
 
-.jumbotron {
+#head {
+  font-size: 175px;
+}
+header {
   text-align: center;
   font-family: "Bungee Hairline", cursive;
   color: lightskyblue;
@@ -34,37 +38,19 @@ p {
 
   background-size: contain;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> fd0e2aac3acb819e230b4468385c1b1b552d48e4
-    animation-name: example2;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-   
-    
-    
-}
-
-@keyframes example2 {
-    from {color: black;}
-    to {color: white;}
-    
-<<<<<<< HEAD
-  
+  animation-name: example2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes example2 {
   from {
-    color: greenyellow;
+    color: black;
   }
   to {
     color: white;
   }
-=======
-
-
 }
 
 #small-head {
@@ -83,18 +69,19 @@ p {
 
 #subtitle {
   font-size: 12px;
->>>>>>> fd0e2aac3acb819e230b4468385c1b1b552d48e4
 }
 
 .search-bar {
   left: 30%;
   width: 40%;
   float: left;
+  margin-top: 20px;
 }
 
 .search-bar-small {
   width: 20%;
   left: 40%;
+  font-size: 8px;
 }
 
 .search-btn {
@@ -106,6 +93,7 @@ p {
   background-color: black;
   color: white;
   border: black 1px solid;
+  margin-top: 20px;
 }
 
 .search-btn-small {
@@ -142,42 +130,55 @@ p {
   margin: 5px;
   font-size: 8px;
 }
-
-.content {
-
-    border: white 2px solid;
-    height: 800px;
-    width: auto;
-    margin: 30px;
-
+.searchDiv {
+  height: 50px;
 }
-
+.content {
+  /* border: black 2px solid; */
+  height: 800px;
+  width: auto;
+  margin: 0px 30px 30px 30px;
+  color: black;
+  background-color: #cdcdcd;
+  box-shadow: 0 6px 20px 0 #cdcdcd, 0 6px 20px 0 #cdcdcd, 0 6px 20px 0 #cdcdcd,
+    0 6px 20px 0 #cdcdcd;
+}
 
 .artistName {
   margin: 20px;
-   color: white;
-   font-size: 100px;
-   font-family: "Bungee Hairline", cursive;
-  
- }
- .band-image {
-  
-  height: 400px;
-  width: 400px;
-  /* border: white 2px solid; */
+  /* background-color: #cdcdcd; */
+  color: black;
+  font-size: 100px;
+
+  /* font-family: "Oswald", sans-serif; */
+  /* font-family: "Anton", sans-serif; */
+  text-align: center;
+  font-weight: bolder;
+}
+.band-image {
+  height: 60%;
+  width: 40%;
   margin: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
- .artist-fb {
-  
-  color: white;
-  font-size: large;
- background-color: blue;
- position: static;
- 
- 
+.artist-fb {
+  position: relative;
+  color: black;
+  left: 20%;
+  font-size: 300%;
 }
 
+.tour {
+  position: relative;
+  bottom: 500px;
+  left: 50%;
+  color: black;
+  font-size: 300%;
+}
 
-
-
+.events {
+  position: relative;
+  left: 10%;
+  color: black;
+}
