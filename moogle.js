@@ -46,7 +46,7 @@ $(document).ready(function() {
     
     //console.log('clicked')
     var userInput = $("#artist").val();
-    // userInput.replace(" ", "-");
+    userInput = userInput.replace(" ", "-");
     console.log(userInput);
     getArtist(userInput);
     $("#results").show();
@@ -61,6 +61,14 @@ $(document).ready(function() {
     tracklist = [];
     // 
   });
+
+  $("#artist").on("click", function() {
+    console.log("clicked");
+    $(".content").empty();
+    $("#results").empty();
+    tracklist = [];
+    $(".content").hide();
+  });
 });
 
 
@@ -68,7 +76,7 @@ $(document).ready(function() {
 function results(name = "", tracklist = []) {
   var resultsContainer = $("<div>");
 
-  var name = $("<p>").text(name);
+  var name = $("<p class='tracks'>").text(name);
 
   // var tracklistStringrify = JSON.stringify(tracklist,null, 2);
   //  var tracklist = $("<p>").text(tracklistStringrify);

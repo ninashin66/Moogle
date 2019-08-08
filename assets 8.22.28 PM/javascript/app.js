@@ -19,12 +19,13 @@ $(document).ready(function() {
       artistImage.addClass("band-image");
       var artistName = $("<h2>").text(responseData.name);
       artistName.addClass("artistName");
+
       var artistFacebook = $("<a>").attr(
         "href",
         responseData.facebook_page_url
       );
 
-      artistFacebook.add("i").addClass("fab fa-facebook fb-icon");
+      artistFacebook.add("i").addClass("fab fa-facebook fb-icon fa-5x");
       artistFacebook.addClass("artist-fb");
       var upcomingEvents = $("<h2>").text(
         responseData.upcoming_event_count +
@@ -59,6 +60,8 @@ $(document).ready(function() {
     $(".content").empty();
 
     var artist = $("#artist").val();
+    // artist = artist.replace(" ", "-");
+    console.log(artist);
     
     console.log(artist);
     if (artist) {
