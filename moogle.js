@@ -76,7 +76,7 @@ $(document).ready(function() {
 function results(name = "", tracklist = []) {
   var resultsContainer = $("<div>");
 
-  var name = $("<p class='tracks'>").text(name);
+  var name = $("<p class='tracks'>");
 
   // var tracklistStringrify = JSON.stringify(tracklist,null, 2);
   //  var tracklist = $("<p>").text(tracklistStringrify);

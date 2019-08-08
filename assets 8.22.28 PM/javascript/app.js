@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $(".content").hide();
+  $("#results").hide();
 
   function getTourDateInfo(searchTerm) {
     // var artist = "";
