@@ -156,7 +156,7 @@ header {
   border-radius: 5px;
   /* font-family: "Oswald", sans-serif; */
   /* font-family: "Anton", sans-serif; */
-  text-align: center;
+  text-align: right;
   font-weight: bolder;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: solid;
@@ -190,6 +190,8 @@ header {
   color: white;
   margin: 20px;
   text-align: center;
+  margin: 0px 0px 0px 40px;
+  
 }
 
 .seeTour {

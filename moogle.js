@@ -43,12 +43,23 @@ $(document).ready(function() {
 
   $("#search").on("click", function(event) {
     event.preventDefault();
-    $("#results").empty();
+    
     //console.log('clicked')
     var userInput = $("#artist").val();
+    userInput = userInput.replace(" ", "-");
     console.log(userInput);
     getArtist(userInput);
     $("#results").show();
+
+  });
+
+  $("#artist").on("click", function() {
+    console.log("clicked");
+    // $("#artist").val(" ");
+    $(".content").empty();
+    $("#results").empty();
+    tracklist = [];
+    // 
   });
 
   $("#artist").on("click", function() {
@@ -59,6 +70,8 @@ $(document).ready(function() {
     $(".content").hide();
   });
 });
+
+
 
 function results(name = "", tracklist = []) {
   var resultsContainer = $("<div>");

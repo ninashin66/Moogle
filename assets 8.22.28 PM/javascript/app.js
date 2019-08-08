@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $(".content").hide();
+  $("#results").hide();
 
   function getTourDateInfo(searchTerm) {
     // var artist = "";
@@ -52,12 +53,17 @@ $(document).ready(function() {
     });
   }
 
+
+
   $("#search").on("click", function(event) {
     event.preventDefault();
 
     $(".content").empty();
 
     var artist = $("#artist").val();
+    // artist = artist.replace(" ", "-");
+    console.log(artist);
+    
     console.log(artist);
     if (artist) {
       getTourDateInfo(artist);
@@ -75,4 +81,13 @@ $(document).ready(function() {
     $("#search").attr("class", "search-btn-small");
     $(".content").show();
   });
+  
+  
+
+  // $("#artist").on("click", function(event) {
+    
+  //   // $(".container").empty();
+  //   // $("#results").empty();
+  // $("#artist").val(" ");
+  // });
 });
